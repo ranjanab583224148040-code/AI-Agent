@@ -1,0 +1,37 @@
+{
+  "name": "calculator",
+  "description": "Performs basic arithmetic operations (+, -, *, /). Use this tool whenever mathematical computation is needed.",
+  "parameters": {
+    "type": "OBJECT",
+    "properties": {
+      "thought": {
+        "type": "STRING",
+        "description": "Your internal reasoning (Thought) explaining why this calculation is needed and what you are computing."
+      },
+      "operation": {
+        "type": "STRING",
+        "description": "The math operation to perform.",
+        "enum": [
+          "add",
+          "subtract",
+          "multiply",
+          "divide"
+        ]
+      },
+      "a": {
+        "type": "NUMBER",
+        "description": "The first number (left operand)."
+      },
+      "b": {
+        "type": "NUMBER",
+        "description": "The second number (right operand)."
+      }
+    },
+    "required": [
+      "thought",
+      "operation",
+      "a",
+      "b"
+    ]
+  }
+}

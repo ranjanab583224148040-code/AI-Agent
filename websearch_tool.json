@@ -1,0 +1,21 @@
+{
+  "name": "websearch",
+  "description": "Searches the web for facts, information, current events, statistics, or general knowledge.",
+  "parameters": {
+    "type": "OBJECT",
+    "properties": {
+      "thought": {
+        "type": "STRING",
+        "description": "Your internal reasoning (Thought) explaining why this search is needed and what specific information you are looking for."
+      },
+      "query": {
+        "type": "STRING",
+        "description": "The search query keywords to look up on the web."
+      }
+    },
+    "required": [
+      "thought",
+      "query"
+    ]
+  }
+}

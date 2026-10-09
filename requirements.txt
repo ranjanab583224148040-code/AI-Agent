@@ -1,0 +1,13 @@
+# Core LangChain & Google GenAI Agent
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-google-genai>=2.0.0
+
+# Vector Store & Embeddings for RAG
+chromadb>=0.5.0
+langchain-chroma>=0.1.0
+
+# Document Loaders (PDF, DOCX) & Environment
+pypdf>=5.0.0
+python-docx>=1.0.0
+python-dotenv>=1.0.0
